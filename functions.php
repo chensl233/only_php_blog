@@ -3,8 +3,13 @@
 const IN = 'admin.php?a=';
 //定义路径常量
 function view($url){    
-    //加载网页元素
+    //加载后台网页元素
     include('./view/admin/'.$url.'.html');
+}
+
+function template($url){    
+    //加载前端网页元素
+    include('./view/index/'.$url.'.html');
 }
 
 function msg($mess,$url){
